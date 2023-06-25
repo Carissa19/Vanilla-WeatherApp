@@ -1,0 +1,59 @@
+h1 {
+  color: blue;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.col-3 {
+  color: rgb(54, 60, 153);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 500;
+
+}
+
+.search-form {
+  background-color: rgb(43, 189, 226);
+  margin: 10px auto;
+}
+
+.temperature {
+
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.weather-details {
+  font-style: oblique;
+  ;
+}
+
+
+.col-2 {
+  margin-top: 40px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+
+.container {
+  border-radius: 50px;
+  border-style: groove;
+  margin: 30px auto;
+
+}
+
+.temp-emoji {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 200;
+}
+
+body {}
+
+/*# sourceMappingURL=/styles.dd855970.css.map */
