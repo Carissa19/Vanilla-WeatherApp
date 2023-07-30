@@ -1,5 +1,5 @@
 h1 {
-  color: blue;
+  color: rgb(0, 123, 255);
   text-align: center;
   margin: 10px auto;
 }
@@ -16,6 +16,7 @@ h1 {
 .search-form {
   background-color: rgb(43, 189, 226);
   margin: 10px auto;
+  border-color: rgb(21, 141, 174);
 }
 
 .temperature {
