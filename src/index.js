@@ -13,6 +13,12 @@ function displayWeatherCondition(response) {
     document.querySelector("#temperature").innerHTML = Math.round(
       response.data.main.temp
     );
+    iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+
   
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
     document.querySelector("#wind").innerHTML = Math.round(
@@ -68,6 +74,7 @@ dateElement.innerHTML = formatDate(currentTime);
   let currentLocationButton = document.querySelector("#current-location-button");
   currentLocationButton.addEventListener("click", getCurrentLocation);
   
+  let iconElement = document.querySelector("#icon");
   searchCity("Cape Town");
 
 
