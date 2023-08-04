@@ -5,7 +5,30 @@ let dayIndex = date.getDay();
 let days = ["Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let day = (days[dayIndex]); 
 
-return  `${days[dayIndex]} ${hours}:${minutes}`;
+return  `${days[dayIndex]} ${hours}:${minutes}`
+}
+
+function displayforecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Wed","Thu","Fri","Sat","Sun"];
+  days.forEach(function(day) {
+  forecastHTML =
+   forecastHTML +
+    `
+    <div class="col-2">
+                 <div class="card-title">${day}</div>
+                  <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" width="36" />
+                  <div class="weather-forecast-temperatures">
+                  <span class="weather-forecast-temperature-max">18° </span>
+                  <span class="weather-forecast-temperature-min">12° </span>
+                </div>
+              </div>
+              
+              `;  
+  })
+           
+           forecastElement.innerHTML = forecastHTML;
 }
 
 function displayWeatherCondition(response) {
@@ -63,6 +86,8 @@ function displayWeatherCondition(response) {
     let temperatureElement = document.querySelector("#temperature");
     temperatureElement.innerHTML = 19;
   }
+
+ 
   
   let dateElement = document.querySelector("#date");
 let currentTime = new Date();
@@ -77,7 +102,7 @@ dateElement.innerHTML = formatDate(currentTime);
   let iconElement = document.querySelector("#icon");
   searchCity("Cape Town");
 
-
+ displayforecast();
 
 
 
