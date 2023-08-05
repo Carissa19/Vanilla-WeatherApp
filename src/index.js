@@ -8,7 +8,8 @@ let day = (days[dayIndex]);
 return  `${days[dayIndex]} ${hours}:${minutes}`
 }
 
-function displayforecast() {
+function displayforecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
   let days = ["Wed","Thu","Fri","Sat","Sun"];
@@ -31,6 +32,15 @@ function displayforecast() {
            forecastElement.innerHTML = forecastHTML;
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "63214c4281922e3bb72fdf12dada7734";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayforecast);
+}
+
+
 function displayWeatherCondition(response) {
     document.querySelector("#city").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round(
@@ -43,12 +53,15 @@ function displayWeatherCondition(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   
+  
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
     document.querySelector("#wind").innerHTML = Math.round(
       response.data.wind.speed
     );
     document.querySelector("#description").innerHTML =
       response.data.weather[0].main;
+
+  getForecast(response.data.coord);
   }
   
   function searchCity(city) {
@@ -102,7 +115,7 @@ dateElement.innerHTML = formatDate(currentTime);
   let iconElement = document.querySelector("#icon");
   searchCity("Cape Town");
 
- displayforecast();
+ 
 
 
 
