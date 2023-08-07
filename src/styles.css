@@ -4,19 +4,21 @@ h1 {
   margin: 10px auto;
 }
 
-.col-3 {
-  color: rgb(54, 60, 153);
-  margin-top: 25px;
-  margin-bottom: 25px;
-  font-size: 18px;
-  font-weight: 500;
-
+.btn {
+  background-color: rgb(228, 133, 43);
+  border-color: rgb(235, 136, 15) ;
 }
 
 .search-form {
-  background-color: rgb(43, 189, 226);
+  background-color:rgb(0, 123, 255) ;
   margin: 10px auto;
   border-color: rgb(21, 141, 174);
+
+}
+
+.weather-of-the-day{
+font-size: larger;
+margin-left: 20px;
 }
 
 .temperature {
@@ -29,13 +31,12 @@ h1 {
 
 .weather-details {
   font-style: oblique;
-  ;
+  font-size: larger;
 }
 
 
 .col-2 {
   margin-top: 40px;
-  margin-left: 15px;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -43,16 +44,13 @@ h1 {
 
 
 .container {
-  border-radius: 50px;
+  border-radius: 30px;
   border-style: groove;
   margin: 30px auto;
  margin-bottom: 30px;
+ 
+ background-image: <img src="" />;
 }
 
-.temp-emoji {
-  text-align: center;
-  font-size: 34px;
-  font-weight: 200;
-}
 
-body {}
+
