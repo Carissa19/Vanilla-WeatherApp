@@ -1,8 +1,8 @@
 h1 {
-  color: rgb(111, 119, 128);
+  color: rgb(193, 206, 220);
   text-align: center;
   margin: 10px auto;
-  
+  font-family:'Press Start 2P', cursive; ;
 }
 
 .btn {
@@ -24,15 +24,17 @@ margin-left: 20px;
 
 .temperature {
 
-  color: rgb(33, 33, 33);
+  color: rgb(0, 0, 0);
   font-size: 64px;
-  font-weight: 400;
-  line-height: 1;
+  font-weight: 100;
+  
+  
 }
 
 .weather-details {
   font-style: oblique;
   font-size: larger;
+  
 }
 
 
@@ -41,19 +43,32 @@ margin-left: 20px;
   margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
+  font-size: smaller;
+
 
 }
 
-body {
+.weather-forecast{
   
-
-
+ border-style: groove;
+  font-size: larger;
+  color:  #0f0f0f;
+  background-color: #ffffff61;
+}
 
 .container {
   border-radius: 30px;
   border-style: groove;
   margin: 30px auto;
  margin-bottom: 30px;
- 
+ font-family:'Press Start 2P', cursive; ;
+background-image: url(newsunset.jpg);
+
+ background-repeat: no-repeat;
+ background-size: cover;
 } 
+ 
+.githublink{
+  color: aliceblue;
+}
 
