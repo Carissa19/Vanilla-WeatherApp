@@ -1,17 +1,17 @@
 h1 {
-  color: rgb(193, 206, 220);
+  color: rgb(170, 191, 214);
   text-align: center;
   margin: 10px auto;
   font-family:'Press Start 2P', cursive; ;
 }
 
 .btn {
-  background-color: rgb(213, 202, 191);
+  background-color: rgb(219, 194, 166);
   border-color: rgb(221, 213, 204) ;
 }
 
 .search-form {
-  background-color:rgb(223, 228, 234) ;
+  background-color:rgb(183, 199, 219) ;
   margin: 10px auto;
   border-color: rgb(211, 199, 199);
 
@@ -69,6 +69,6 @@ background-image: url(newsunset.jpg);
 } 
  
 .githublink{
-  color: aliceblue;
+  color: rgb(39, 135, 219);
 }
 
