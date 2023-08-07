@@ -1,18 +1,19 @@
 h1 {
-  color: rgb(0, 123, 255);
+  color: rgb(111, 119, 128);
   text-align: center;
   margin: 10px auto;
+  
 }
 
 .btn {
-  background-color: rgb(228, 133, 43);
-  border-color: rgb(235, 136, 15) ;
+  background-color: rgb(213, 202, 191);
+  border-color: rgb(221, 213, 204) ;
 }
 
 .search-form {
-  background-color:rgb(0, 123, 255) ;
+  background-color:rgb(223, 228, 234) ;
   margin: 10px auto;
-  border-color: rgb(21, 141, 174);
+  border-color: rgb(211, 199, 199);
 
 }
 
@@ -36,10 +37,15 @@ margin-left: 20px;
 
 
 .col-2 {
-  margin-top: 40px;
-  margin-bottom: 15px;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
   text-align: center;
+
 }
+
+body {
+  
 
 
 
@@ -49,8 +55,5 @@ margin-left: 20px;
   margin: 30px auto;
  margin-bottom: 30px;
  
- background-image: <img src="" />;
-}
-
-
+} 
 
